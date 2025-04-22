@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Interativo sobre Baleias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Site Interativo sobre Baleias</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#species">Espécies</a>
+            <a href="#login">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Bem-vindo ao Site Interativo sobre Baleias!</h2>
+            <p>Explore o mundo das baleias e aprenda sobre suas espécies.</p>
+            <img src="https://example.com/whale-image.jpg" alt="Baleia" class="whale-image">
+        </section>
+
+        <section id="species">
+            <h2>Espécies de Baleias</h2>
+            <div class="species">
+                <div class="species-item">
+                    <h3>Baleia Azul</h3>
+                    <img src="https://example.com/blue-whale.jpg" alt="Baleia Azul">
+                    <p>A maior espécie de baleia do mundo.</p>
+                    <button onclick="playSound('blueWhale')">Reproduzir Som</button>
+                </div>
+                <div class="species-item">
+                    <h3>Baleia Jubarte</h3>
+                    <img src="https://example.com/humpback-whale.jpg" alt="Baleia Jubarte">
+                    <p>Conhecida por suas acrobacias.</p>
+                    <button onclick="playSound('humpbackWhale')">Reproduzir Som</button>
+                </div>
+                <!-- Adicione mais espécies conforme necessário -->
+            </div>
+        </section>
+
+        <section id="login">
+            <h2>Área de Login</h2>
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Site Interativo sobre Baleias</p>
+    </footer>
+
+    <audio id="blueWhale" src="path/to/blue-whale-sound.mp3"></audio>
+    <audio id="humpbackWhale" src="path/to/humpback-whale-sound.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
